@@ -8,7 +8,7 @@ class HtmlDownLoader(object):
         if url is None:
             return None
         response = urllib2.urlopen(url)
-        if response.getcode == 200:
+        if response.getcode ！= 200:
             return None
         else:
             return response.read()
